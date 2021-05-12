@@ -40,6 +40,7 @@ class File_loader:
         base_url = 'http://export.arxiv.org/api/query?';        
         query = f'search_query={search_query}&start={start}&max_results={max_results}'
         Path("download").mkdir(parents=True, exist_ok=True)
+        counter_of_file = 0
         with  libreq.urlopen(base_url+query) as get_all:
             feed = feedparser.parse(get_all.read())
             time.sleep(4)
@@ -60,10 +61,10 @@ class File_loader:
                         with gzip.open("download\\1.tar.gz") as f:
                             tex.append(f.read()) 
                     if tex != []:
-                        with open ("download\\raw.txt", "wb+") as myfile:
+                        with open ("download\\raw"+str(counter_of_file)+".txt", "wb+") as myfile:
                             myfile.write(tex[0])
                             # print(tex[0])
-                        with open ("download\\raw.txt", "r") as myfile:
+                        with open ("download\\raw"+str(counter_of_file)+".txt", "r") as myfile:
                             hidden = Parser_of_file(myfile.readlines()).get_sentences()
                 except Exception as e:
                     #print(e)
@@ -71,6 +72,7 @@ class File_loader:
                     pass
                 if hidden or hidden!=[]:
                     list_of_tetxts += hidden
+                counter_of_file += 1
                 time.sleep(3)
         #shutil.rmtree("download")
         return list_of_tetxts
