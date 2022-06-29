@@ -1,0 +1,9 @@
+T1	Description 2351 2419	Let $G$ be a graph with $V(G)=\{v_1,\dots,v_k,\dots,v_n\}$ $(1<k<n)$
+T2	Object 2355 2358	$G$
+T3	Description 2700 2753;2754 2813	Let $G'$ be a graph with $V(G')=\{v'_1,\dots,v'_n\}$  such that $G-v_j \cong G'-v'_j$ for any $j\in\{1,\dots,n\}$
+T4	Object 2704 2708	$G'$
+T5	Description 2816 2879	Here we note that $d(v_j)=d(v'_j)$ for any $j\in\{1,\dots,n\}$.
+T6	Object 2376 2380	V(G)
+T7	Object 2726 2731	V(G')
+T8	Description 2472 2502	$\bigcup_{i=1}^{k}N[v_i]=V(G)$
+T9	Description 2524 2572;2573 2610	$|d(v_i)-d(v_j)|>1$ for any $i\in\{1,\dots,k\}$  and $j\in\{1,\dots,n\}\setminus\{i\}$

@@ -1,0 +1,10 @@
+T1	Description 863 1128;1130 1235	A \textbf{Steiner triple system} of order $n$ (or $STS(n)$) is a pair $(X,S)$ where $X$, called the foundation, is a finite set with $n$ elements and $S$ is a subset of $\mathcal{P}_3(X)$ (the set of all 3-subsets of $X$) whose elements are called blocks, such that for every pair of distinct elements of $X$ there is exactly one block in $S$ which contains both of them.
+T5	Description 2119 2216;2218 2262;2264 2314	A \textbf{pasch configuration} (or quadrilateral)  in  $\mathcal{P}_3(X)$ is a set of four blocks $$\{a,b,c\}, \{a,d,e\},\{f,b,d\},\{f,c,e\}$$ such that all elements $a,b,c,d,e,f$ are distinct.
+T2	Object 873 894	Steiner triple system
+T15	Symbol 914 920	STS(n)
+T4	Object 1519 1538	Steiner quasi-group
+T14	Symbol 1580 1585	\star
+T6	Object 2129 2148	pasch configuration
+T16	Symbol 2220 2260	\{a,b,c\}, \{a,d,e\},\{f,b,d\},\{f,c,e\}
+T7	Object 2154 2167	quadrilateral
+T3	Description 1509 1630;1631 1724	A \textbf{Steiner quasi-group} structure on $X$ is a binary operation $\star$ on $X$ subject to the following conditions: for every $a,b\in X$, we have  $a\star a=a$,  $a\star b=b\star a$, and  $a\star(a\star b)=b$.

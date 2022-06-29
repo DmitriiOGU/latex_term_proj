@@ -1,0 +1,318 @@
+\documentclass{amsart}
+\frenchspacing
+%\usepackage{amssymb}
+\usepackage{amssymb, mathrsfs, bbm}
+%\usepackage[margin=1.25in]{geometry}
+%\usepackage{parskip}
+%\usepackage{color}
+\usepackage[sc, osf]{mathpazo}
+\linespread{1.25}
+\selectfont
+\usepackage[protrusion=true, expansion=true]{microtype}
+%\let\oldmarginpar\marginpar
+%\renewcommand\marginpar[1]{\-\oldmarginpar[\raggedleft\footnotesize\em #1]%
+%{\raggedright\footnotesize\em #1}}
+
+%\usepackage[all]{xy}
+%\SelectTips{eu}{}
+%\entrymodifiers={+!!<0pt,\fontdimen22\textfont2>}
+
+\usepackage[pdftex]{hyperref}
+%\usepackage{rotfloat}
+%\usepackage{showkeys}
+%\usepackage{url}
+
+\swapnumbers
+\theoremstyle{plain}
+\newtheorem{thm}[subsection]{Theorem}
+\newtheorem{lemma}[subsection]{Lemma}
+\newtheorem{prop}[subsection]{Proposition}
+\newtheorem{scholium}[subsection]{Scholium}
+\newtheorem{cor}[subsection]{Corollary}
+
+\theoremstyle{remark}
+\newtheorem{example}[subsection]{Example}
+\newtheorem{remark}[subsection]{Remark}
+
+\theoremstyle{definition}
+\newtheorem{warning}[subsection]{Warning}
+
+
+\numberwithin{equation}{subsection}
+
+\renewcommand{\labelenumi}{(\roman{enumi})}
+
+\def\e{\mathbbm{1}}
+
+\def\cA{\mathcal{A}}
+\def\cB{\mathcal{B}}
+\def\cC{\mathcal{C}}
+\def\cD{\mathcal{D}}
+\def\cE{\mathcal{E}}
+\def\cF{\mathcal{F}}
+\def\cG{\mathcal{G}}
+\def\cH{\mathcal{H}}
+\def\cI{\mathcal{I}}
+\def\cJ{\mathcal{J}}
+\def\cK{\mathcal{K}}
+\def\cL{\mathcal{L}}
+\def\cM{\mathcal{M}}
+\def\cN{\mathcal{N}}
+\def\cO{\mathcal{O}}
+\def\cP{\mathcal{P}}
+\def\cQ{\mathcal{Q}}
+\def\cR{\mathcal{R}}
+\def\cS{\mathcal{S}}
+\def\cT{\mathcal{T}}
+\def\cU{\mathcal{U}}
+\def\cV{\mathcal{V}}
+\def\cW{\mathcal{W}}
+\def\cX{\mathcal{X}}
+\def\cY{\mathcal{Y}}
+\def\cZ{\mathcal{Z}}
+
+\def\11{\mathbf{1}}
+\def\aa{\mathbf{a}}
+\def\AA{\mathbf{A}} 
+\def\BB{\mathbf{B}} 
+\def\CC{\mathbf{C}} 
+\def\DD{\mathbf{D}} 
+\def\EE{\mathbf{E}} 
+\def\FF{\mathbf{F}} 
+\def\GG{\mathbf{G}} 
+\def\HH{\mathbf{H}}
+\def\ii{\mathbf{i}}
+\def\II{\mathbf{i}} 
+\def\JJ{\mathbb{J}} 
+\def\KK{\mathbf{K}} 
+\def\LL{\mathbb{L}} 
+\def\MM{\mathbb{M}} 
+\def\NN{\mathbb{N}} 
+\def\OO{\mathbb{O}} 
+\def\PP{\mathbf{P}} 
+\def\qq{\mathbf{q}}
+\def\QQ{\mathbf{Q}} 
+\def\RR{\mathbb{R}} 
+\def\SS{\mathbb{S}} 
+\def\TT{\mathbf{T}} 
+\def\UU{\mathbb{U}} 
+\def\VV{\mathbf{V}} 
+\def\WW{\mathbb{W}} 
+\def\XX{\mathbf{X}} 
+\def\YY{\mathbb{Y}} 
+\def\ZZ{\mathbf{Z}} 
+ 
+ \def\fa{\mathfrak{a}} 
+ \def\fb{\mathfrak{b}} 
+ \def\fc{\mathfrak{c}} 
+ \def\fd{\mathfrak{d}} 
+ \def\fe{\mathfrak{e}} 
+ \def\ff{\mathfrak{f}} 
+ \def\fg{\mathfrak{g}} 
+ \def\fh{\mathfrak{h}} 
+ \def\fj{\mathfrak{j}} 
+ \def\fk{\mathfrak{k}} 
+ \def\fl{\mathfrak{l}} 
+ \def\fm{\mathfrak{m}} 
+ \def\fn{\mathfrak{n}} 
+ \def\fo{\mathfrak{o}} 
+ \def\fp{\mathfrak{p}} 
+ \def\fq{\mathfrak{q}} 
+ \def\fr{\mathfrak{r}} 
+ \def\fs{\mathfrak{s}} 
+ \def\ft{\mathfrak{t}} 
+ \def\fu{\mathfrak{u}} 
+ \def\fv{\mathfrak{v}} 
+ \def\fw{\mathfrak{w}} 
+ \def\fx{\mathfrak{x}} 
+ \def\fy{\mathfrak{y}} 
+ \def\fz{\mathfrak{z}}
+
+ \def\fA{\mathfrak{A}} 
+ \def\fB{\mathfrak{B}} 
+ \def\fC{\mathfrak{C}} 
+ \def\fD{\mathfrak{D}} 
+ \def\fE{\mathfrak{E}} 
+ \def\fF{\mathfrak{F}} 
+ \def\fG{\mathfrak{G}} 
+ \def\fH{\mathfrak{H}} 
+ \def\fJ{\mathfrak{J}} 
+ \def\fK{\mathfrak{K}} 
+ \def\fL{\mathfrak{L}} 
+ \def\fM{\mathfrak{M}} 
+ \def\fN{\mathfrak{N}} 
+ \def\fO{\mathfrak{O}} 
+ \def\fP{\mathfrak{P}} 
+ \def\fQ{\mathfrak{Q}} 
+ \def\fR{\mathfrak{R}} 
+ \def\fS{\mathfrak{S}} 
+ \def\fT{\mathfrak{T}} 
+ \def\fU{\mathfrak{U}} 
+ \def\fV{\mathfrak{V}} 
+ \def\fW{\mathfrak{W}} 
+ \def\fX{\mathfrak{X}} 
+ \def\fY{\mathfrak{Y}} 
+ \def\fZ{\mathfrak{Z}}
+
+ \def\fgl{\mathfrak{gl}}  
+ \def\fsl{\mathfrak{sl}}
+ \def\fso{\mathfrak{so}}
+ \def\fsp{\mathfrak{sp}}  
+
+ \def\AffineGr{\mathcal{G}\mathrm{r}}
+ \def\can{\mathrm{can}}
+ \def\Ch{\mathrm{Ch}}
+ \def\Coh{\mathrm{Coh}}
+ \def\coker{\mathrm{coker}}
+ \def\conv{\cdot}
+ \def\dim{\mathrm{dim}} 
+ \def\DR{\mathscr{DR}}
+ \def\End{\mathrm{End}}
+ \def\Ext{\mathrm{Ext}}
+ \def\Flag{\mathscr{F}\!\ell}
+ \def\For{\mathrm{For}}
+ \def\gr{\mathrm{gr}}
+ \def\Gr{\mathcal{G}r}
+ \def\grmod{\mathrm{-grmod}}
+ \def\Hecke{\mathscr{H}}
+ \def\HExt{\mathrm{ext}}
+ \def\HHom{\mathrm{hom}}
+ \def\Hom{\mathrm{Hom}}
+ \def\id{\mathrm{id}}
+ \def\ind{\mathrm{ind}}
+ \def\MFq{\mathrm{MF_{qcoh}}}
+ \def\MFrh{\mathrm{MF_{rh}}}
+ \def\MHM{\mathrm{MHM}}
+ \def\Nilcone{\mathscr{N}}
+ \def\op{\mathrm{op}}
+ \def\Omix{\cO^{\mathrm{mix}}}
+ \def\Perv{\mathrm{Perv}}
+ \def\pD{\vphantom{D}^p\!D}
+ \def\pH{\vphantom{H}^p\!H}
+ \def\pr{\mathrm{pr}}
+ \def\pt{\mathrm{pt}}
+ \def\qq{\mathbf{q}}
+ \def\Qcoh{\mathrm{Qcoh}}
+ \def\rat{\mathrm{rat}}
+ \def\res{\mathrm{res}}
+ \def\RH{\mathrm{RH}}
+ \def\RHom{\mathscr{H}\!om}
+ \def\Spec{\mathrm{Spec}}
+ \def\IC{\mathrm{IC}}
+ \def\real{\mathrm{real}}
+ \def\wt{\mathrm{wt}}
+
+ \newcommand{\smatrix}[1]{\left(\begin{smallmatrix}#1\end{smallmatrix}\right)}
+
+ \newcommand{\mapright}[1]{\xrightarrow{#1}}
+ \newcommand{\mapleft}[1]{\xleftarrow{#1}}
+
+ \newcommand{\const}[1]{\underline{#1}}
+ \newcommand{\Res}{\mathop{\mathrm{Res}}\nolimits}
+ \newcommand{\Dmod}[1]{\cD_{#1}\mathrm{-mod}}
+ \newcommand{\modD}[1]{\mathrm{mod-}\cD_{#1}}
+ \newcommand{\qtimes}[1]{\mathop{\times}\limits^{#1}}
+ \newcommand{\ttimes}{\mathop{\widetilde{\boxtimes}}}
+ \newcommand{\totimes}{\mathop{\widetilde{\otimes}}}
+
+\makeatletter
+\renewcommand{\@makefnmark}{\mbox{\textsuperscript{}}}
+\makeatother
+
+\title{On Hall-Littlewood polynomials}
+\author{R. Virk}
+\email{rsvirk@gmail.com}
+\begin{document}
+\maketitle
+%\setcounter{tocdepth}{1}
+%\tableofcontents
+%\renewcommand{\thesubsection}{\textbf{\arabic{section}.\arabic{subsection}}}
+\subsection{Introduction}
+This billet should be regarded as a footnote to \cite{GL}. We observe that Hall-Littlewood polynomials encode motivic Euler characteristics of intersections in the affine Grassmanian. Consequently, some coarse Hodge theoretic information is contained in them.
+
+The reader should view this as an exercise in semantics. After all, Hall-Littlewood polynomials have traditionally been interpreted in terms of point counting (over finite fields). The Hodge theoretic interpretation (as opposed to point counting) is merely a preference for the Hodge realization (as opposed to the $\ell$-adic realization) of motivic cohomology.
+Of course, all of these cohomological interpretations are, in turn, a rephrasing of I.G. Macdonald's fantastic investigations of Hall-Littlewood polynomials in connection with $p$-adic groups (the spherical functions of \cite{Mac}).
+
+Embarrassingly, your correspondent has arrived at this understanding at a rather glacial pace. Hopefully, writing some of this down will speed things up for others encountering similar esoterica.
+
+\subsection{The setup}
+Work over the complex numbers. Fix a connected reductive linear algebraic group, a Borel subgroup, and a maximal torus. To this data one associates:
+\begin{align*}
+X &- \mbox{the group of coweights}, \\
+X_+ &- \mbox{the semi-group of dominant coweights}, \\
+\langle -, - \rangle &- \mbox{the evident perfect pairing between weights and coweights}, \\
+\Gr &- \mbox{the affine Grassmanian}.
+\end{align*}
+The affine Grassmanian is an ind-projective ind-variety. Details on the construction/properties of $\Gr$ and subvarieties appearing below can be found in \cite{PS} and \cite{MV}. The notation used in this note is chosen to conform with \cite{MV}.
+
+The disk group associated to our reductive group acts on $\Gr$. The orbits of this action are parameterized by $X_+$. Write $\Gr^{\lambda}$ for the orbit corresponding to $\lambda\in X_+$. The $\Gr^{\lambda}$ are locally closed (finite dimensional) subvarieties of $\Gr$. The affine Grassmanian also decomposes into orbits for the loop group of the unipotent radical of the Borel subgroup opposite to our chosen Borel. These orbits are parameterized by $X$. Write $S_{\nu}$ for the orbit corresponding to $\nu\in X$.
+\begin{align*}
+\Gr &= \bigsqcup_{\lambda\in X_+}\Gr^{\lambda} && \mbox{(Cartan decomposition)}, \\
+\Gr &= \bigsqcup_{\nu\in X}S_{\nu} && \mbox{(Iwasawa decomposition)}.
+\end{align*}
+The $S_{\nu}$ are neither of finite dimension nor of finite codimension. However, they are semi-infinite in the sense that:
+\[ \Gr^{\lambda}\cap S_{\nu} \mbox{ is of pure dimension $\langle \lambda + \nu, \rho^{\vee}\rangle$}, \]
+where $2\rho^{\vee}$ is the sum of positive roots.
+
+The varieties $\Gr^{\lambda}\cap S_{\nu}$ may be defined over finite fields. Let
+\[ L_{\lambda\nu}(q) = |\{\mbox{$\FF_q$-rational points of $\Gr^{\lambda}\cap S_{\nu}$}\}|, \]
+where $\FF_q$ denotes the finite field with $q$ elements.
+
+We now work with symmetric functions in the group algebra (over $\ZZ[q^{-1}]$) of $X$. Here `symmetric' refers to invariant under the evident action of the Weyl group on $X$. 
+The canonical reference for symmetric functions is \cite{Mac2}.
+
+For $\lambda \in X_+$, let
+\begin{align*}
+m_{\lambda} &= \mbox{the monomial symmetric function corresponding to $\lambda$}, \\
+P_{\lambda} &= \mbox{the Hall-Littlewood function corresponding to $\lambda$}.
+\end{align*}
+It is known that
+\[ P_{\lambda} = \sum_{\nu\in X_+} q^{-\langle \lambda+\nu, \rho^{\vee}\rangle}L_{\lambda\nu}m_{\nu}. \]
+
+\subsection{Soft Hodge theory}
+Let $Y$ be a complex variety. The compactly supported (rational) cohomology $H_c^*(Y)$ admits a functorial (mixed) Hodge structure \cite{De}. Define
+\[ h_c^{i,j;k}(Y) = \dim \, \gr^i_F\, \gr^W_{i+j}\, H_c^k(Y), \]
+where $\gr_F$ (resp. $\gr^W$) denotes associated graded of the Hodge (resp. weight) filtration.
+The compactly supported mixed Hodge polynomial and Hodge-Euler characteristic of $Y$ are defined by
+\begin{align*}
+h_c(Y; x,y,t) &= \sum h_c^{i,j;k}x^iy^jt^k,\\
+E(Y; x,y) &= h_c(Y; x,y, -1),
+\end{align*}
+respectively. The Hodge-Euler characteristic is motivic: if $Y = \bigsqcup_{i=1}^n Z_i$, with each $Z_i$ a locally closed subvariety, then
+\[ E(Y;x,y) = \sum_{i=1}^n E(Z_i; x,y).\]
+Similarly, the K\"unneth formula yields:
+\[ E(Y\times Z; x,y) = E(Y;x,y)E(Z;x,y).\]
+If each $H^k_c(Y)$ is Hodge-Tate, i.e., $h_c^{i,j;k}(Y)=0$ for $i\neq j$, then $h_c(Y;x,y,t)$ is a polynomial in $xy$ and $t$, and we set
+\begin{align*}
+h_c(Y; q,t) &= h_c(Y; q^{\frac{1}{2}}, q^{\frac{1}{2}}, t) \\
+E(Y; q) &= E(Y; q^{\frac{1}{2}}, q^{\frac{1}{2}}).
+\end{align*}
+
+\begin{scholium}
+Hall-Littlewood polynomials encode the Hodge-Euler characteristics of the $\Gr^{\lambda}\cap S_{\nu}$. More precisely, for $\lambda\in X_+$,
+\[ P_{\lambda} = \sum_{\nu\in X_+} q^{-\langle \lambda + \nu, \rho^{\vee}\rangle} E(\Gr^{\lambda}\cap S_{\nu}; q)m_{\nu}.\]
+\end{scholium}
+
+\begin{proof}
+By \cite[Lemma 4]{GL}, each intersection $\Gr^{\lambda}\cap S_{\nu}$
+admits a decomposition into locally closed subvarieties isomorphic to a product of some linear affine space ($\AA^s$) and some algebraic torus ($\GG_m^t$). In particular, $H^k_c(\Gr^{\lambda}\cap S_{\nu})$ is Hodge-Tate. Further, the Hodge-Euler characteristic is motivic, and
+\begin{align*}
+E(\AA^s\times \GG_m^t; q) &= q^s(q-1)^t \\
+&= |\{\mbox{$\FF_q$-rational points of $\AA^s \times \GG_m^t$}\}|. \qedhere
+\end{align*}
+\end{proof}
+I would be very grateful if someone could explain to me how to compute the polynomials $h_c(\Gr^{\lambda}\cap S_{\nu}; q,t)$. Apart from intrinsic interest, the problem of computing $H_c^*(\Gr^{\lambda}\cap S_{\nu})$ is similar in flavor to understanding certain intersections in the (finite) flag variety (see \cite{V}).
+
+\begin{thebibliography}{99}
+%\bibitem[BB2]{BB2} {\sc A. Bialynicki-Birula}, {\em Some properties of the decompositions of algebraic varieties determined by actions of a torus}, Bulletin de L'Academie Polonaise des Sciences, S\'erie des sciences math. astr. et phys. \textbf{XXIV}, no. 9 (1976), 667-674.
+%\bibitem[BGG]{BGG} {\sc J. Bernstein, I. M. Gelfand, S. I. Gelfand}, {\em A certain category of $\fg$-modules}, Functional Analysis and its Applications \textbf{10}, no. 2 (1976), 1-8.
+\bibitem[De]{De} {\sc P. Deligne}, {\em Th\'eorie de Hodge I, II, III}, Actes Congr\`es Intern. Math. (1970), 425-430; Publ. Math. IHES \textbf{40} (1971), 5-58; ibid. \textbf{44} (1974), 5-77.
+\bibitem[GL]{GL} {\sc S. Gaussent, P. Littelmann}, {\em One skeleton galleries, the path model and a generalization of Macdonald's formula for Hall-Littlewood polynomials}, arXiv:1004.0066v2.
+%\bibitem[Lu]{Lu} {\sc G. Lusztig}, {\em Green polynomials and Singularities of Unipotent Classes}, Advances in Math. \textbf{42} (1981), 169-178.
+\bibitem[Mac1]{Mac} {\sc I.G. Macdonald}, {\em Spherical functions on a group of $p$-adic type}, Publ. Ramanujan Institute No. 2, Madras (1971).
+\bibitem[Mac2]{Mac2} {\sc I.G. Macdonald}, {\sl Symmetric functions and Hall polynomials}, Oxford Math. Monographs, Oxford Univ. Press, New York (second edition, 1995).
+\bibitem[MV]{MV} {\sc I. Mirkovi\'c, K. Vilonen}, {\em Geometric Langlands duality and representations of algebraic groups over commutative rings}, Ann. of Math. (2) \textbf{166} (2007), no. 1, 95-143.
+\bibitem[PS]{PS} {\sc A. Pressley, G. Segal}, {\sl Loop groups}, Oxford Math. Monographs, Oxford Univ. Press, New York (1986).
+\bibitem[V]{V} {\sc R. Virk}, {\em Extensions of Verma modules}, arXiv:1303.6535.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,9 @@
+T5	Description 4998 5051	Now $f_1:G-v_1\rightarrow G'-v'_1$ is an isomorphism.
+T6	Object 5039 5050	isomorphism
+T7	Description 5052 5103;5105 5169;5171 5189	We show that the map $f:G\rightarrow G'$ defined by $f(v_1)=v'_1$ and $f(v_j)=f_1(v_j)$ for each $j\in\{2,\dots,n\}$ is an isomorphism.
+T8	Object 5177 5188	isomorphism
+T2	Description 2881 2934;2936 2965	Let $f_j:G-v_j \rightarrow G'-v'_j$ be an isomorphism for each $j\in\{1,\dots,n\}$.
+T9	Object 2923 2934	isomorphism
+T3	Symbol 2886 2889	f_j
+T4	Symbol 5003 5006	f_1
+T1	Symbol 5074 5075	f

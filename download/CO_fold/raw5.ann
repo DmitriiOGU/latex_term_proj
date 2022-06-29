@@ -1,0 +1,4 @@
+T1	Description 1464 1533;1534 1664	Stern's diatomic sequence $a_1=1,  a_{2n}=a_n,  a_{2n+1}=a_n+a_{n+1}$ is a particularly well studied sequence (see, e.g., \cite{B1}, \cite{L}, \cite{N} and references therein,   as well as \cite{SW}).
+T3	Description 23296 23419	A \textit{Fibonacci representation} of a number $n$ is a way of writing that number as a sum of distinct Fibonacci numbers.
+T2	Object 1464 1489	Stern's diatomic sequence
+T4	Object 23306 23330	Fibonacci representation

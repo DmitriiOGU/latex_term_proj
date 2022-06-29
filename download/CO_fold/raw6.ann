@@ -1,0 +1,9 @@
+T1	Description 865 1010	A \textit{weighing matrix of order $n$ and weight $k$} (a $W(n,k)$) is a $n \times n$ matrix $A$ with $0,\pm 1$ entries and such that $AA^T = kI.
+T3	Description 1837 1984	A \textit{circulant matrix} is a matrix such that each of its rows, after the first, can be obtained from the row above it by a right cyclic shift.
+T4	Object 1847 1863	circulant matrix
+T5	Description 1012 1074	A Hankel matrix is a matrix whose skew diagonals are constant.
+T6	Object 1014 1027	Hankel matrix
+T7	Description 4423 4493	A conference matrix is a weighing matrix of order $n$ and weight $n-1.
+T8	Object 4425 4442	conference matrix
+T9	Symbol 924 930	W(n,k)
+T2	Object 875 890	weighing matrix

@@ -1,0 +1,19 @@
+T1	Description 16301 16337;16339 16434	A subspace of an orthogonal space is \emph{anisotropic} if it contains no nonzero singular vector -- and hence has dimension $\le2$.
+T2	Object 16345 16356	anisotropic
+T3	Description 17228 17256;17259 17276;17278 17327;17330 17351;17353 17456	A \emph{partial ovoid} of an orthogonal  space is a set $\Omega$ of   t.s. points such that each maximal~t.s.~subspace contains  at most one point in the set;  $\Omega$  is an  \emph{ovoid} if it meets every such subspace.
+T4	Object 17236 17249	partial ovoid
+T5	Object 17417 17422	ovoid
+T8	Object 17617 17623	spread
+T9	Object 17751 17792	symplectic or orthogonal   partial spread
+T10	Object 17883 17918	symplectic or  orthogonal    spread
+T13	Symbol 17288 17294	\Omega
+T14	Symbol 17395 17401	\Omega
+T7	Object 17467 17481	partial spread
+T15	Symbol 17533 17539	\Sigma
+T16	Symbol 17597 17603	\Sigma
+T17	Symbol 17795 17801	\Sigma
+T18	Symbol 17863 17869	\Sigma
+T12	Object 87291 87306	ordinary} point
+T6	Description 17459 17521;17522 17530;17532 17543;17545 17595;17596 17645;17647 17671	A \emph{partial spread} in a $2n$-dimensional vector space $V$ is a set $\Sigma$ of $n$-spaces any two of which have only 0 in common; $\Sigma$  is a \emph{spread} if every   vector is in a member of $\Sigma$.
+T19	Description 17671 17742;17745 17793;17794 17861;17862 17938;17941 17992	~If $V$ is a $2n$-dimensional symplectic or orthogonal  vector space,~a \emph{symplectic or orthogonal   partial spread} $\Sigma$ is a partial spread consisting~of t.i.~or t.s.~$n$-spaces; $\Sigma$ is a  \emph{symplectic or  orthogonal    spread} if every vector or every  singular  vector is in a member of $\Sigma$.
+T11	Description 87283 87311;87313 87382;87383 87431;87432 87465;87468 87504	An {\em ordinary} point is a singular point in  $\Omega_0^\perp$  of the form $\< (0,\b, \g ,0)\>$ such that either $\b=0$ and  $T(\g^{1+q})\ne 0$, or    $T(\b^{1+q})\ne 0$  (recall that  $ T(\b)=T(\g)= T(\b\g) = 0 $).

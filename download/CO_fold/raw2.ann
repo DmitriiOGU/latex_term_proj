@@ -1,0 +1,61 @@
+T5	Object 2437 2452	reconstructible
+T6	Description 2415 2418;2419 2483;2484 2504	The graph $G$ is {\it reconstructible} if it is isomorphic to any of its reconstructions.
+T9	Object 2895 2910	reconstructible
+T10	Description 2860 2925;2926 2990	The class of graphs is called {\it reconstructible} if all graphs from this class with at least three vertices are reconstructible
+T11	Object 3438 3450	recognizable
+T12	Description 3389 3454;3455 3516;3517 3540	The class of graphs $\mathcal{R}$ is called {\it recognizable} if for any graph $G\in \mathcal{R}$ all its reconstructions also belong to $\mathcal{R}$
+T13	Description 3542 3580;3581 3633;3634 3700;3701 3708	The class $\mathcal{R}$ is {\it weakly reconstructible} if for any $G\in \mathcal{R}$ every reconstruction of $G$ which belongs to $\mathcal{R}$ is isomorphic to $G$.
+T14	Object 3574 3580;3581 3596	weakly reconstructible
+T15	Description 4219 4296;4298 4352	A {\it triad} is a triple $T=(G,A,B)$, where $G$ is a graph and $(A,B)$ is an ordered partition of $V(G)$ into two disjoint subsets.
+T16	Object 4226 4231	triad
+T17	Description 4613 4641;4643 4696;4698 4721	$M$ is called a {\it module} of $G$ if $v\sim M$ or $v\not\sim M$ for every vertex $v\in V(G)\setminus M$.
+T19	Description 5139 5176;5178 5236	The modules $M$ with $1<|M|<|VG|$ are called {\it nontrivial modules} or {\it homogeneous sets}.
+T20	Object 5190 5208	nontrivial modules
+T21	Object 5218 5234	homogeneous sets
+T22	Description 5239 5313;5315 5404;5406 5446	A graph $G$ is called {\it 1-decomposable} \cite{TC85b}, if there exists a module $M$ (called ({\it 1-module})) of $G$ with associated partition $(A,B,M)$ such that $A$ is a clique and $B$ is a stable set.
+T23	Object 5266 5280	1-decomposable
+T2	Description 2169 2227;2228 2287;2288 2342	The graph $H$ with deck $D(H)=(H_u)_{u\in V(H)}$ is called the {\it reconstruction} of $G$ if there exists a bijection $f:V(G)\rightarrow V(H)$ such that $G_v\cong H_{f(v)}.
+T4	Description 2055 2094;2095 2160;2161 2167	The collection $D(G)=(G_v)_{v\in V(G)}$ of vertex-deleted subgraphs of graph $G$ is called the {\it deck} of $G.
+T7	Description 5823 5879;5880 5943;5944 6007;6008 6068;6069 6075	A graph $G$ is called $P_4$-{\it connected} (or $p$-{\it connected}), if for every partition of $V(G)$ into two disjoint sets $V_1$ and $V_2$ there exists an induced $P_4$ (called {\it crossing} $P_4$) which contains vertices from both $V_1$ and $V_2$.
+T25	Description 6242 6254;6255 6317;6318 6334	The $p$-{\it connected component} of $G$ is a maximal induced $p$-connected subgraph of $G$.
+T27	Description 6434 6494;6495 6560;6561 6574	A graph is called {\it split} \cite{HS81}, if there exists a partition of its set of vertices $V(G)=A\cup B$ into a clique and a stable set.
+T28	Object 6457 6462	split
+T29	Description 6575 6623;6624 6643	This partition is called a {\it bipartition} and denoted as $(A,B)$.
+T30	Object 6607 6618	bipartition
+T31	Description 7062 7069;7070 7136;7137 7145	A graph $G$ is $P_4$-{\it tidy} \cite{GRH97}, if any $P_4$ has at most one partner.
+T33	Description 7660 7724;7725 7787;7788 7852;7853 7878	A $p$-connected graph $S$ is called {\it separable} \cite{JO95}, if there exists a disjoint partition of its vertex set $V(S) = A\cup B$ such that every crossing $P_4$ has its midpoints in $A$ and its endpoints in $B$.
+T34	Object 7701 7710	separable
+T35	Description 7879 7919;7920 7956	In this case a triad $(S,A,B)$ is called a {\it separable p-connected triad}.
+T36	Object 7927 7954	separable p-connected triad
+T37	Description 8099 8161;8162 8224;8225 8239	Let's call a triad $(G,A,B)$ {\it generalized split triad}, if every connected component of $\overline{G[A]}$ and $G[B]$ is a module in $G$.
+T38	Object 8133 8156	generalized split triad
+T41	Object 9222 9227	split
+T42	Description 9210 9242;9244 9274;9279 9336	Then $G$ is split if and only if \begin{equation}\label{HSineq} \sum_{i=1}^m deg(v_i) = m(m-1) + \sum_{i=m+1}^n deg(v_i).
+T45	Description 10195 10251;10252 10307	A vertex $v$ in a $p$-connected graph $G$ is called {\it $p$-articulation vertex}, if $G_v$ is $p$-disconnected.
+T46	Object 10252 10275	$p$-articulation vertex
+T48	Object 10385 10408	minimally $p$-connected
+T47	Description 10308 10316;10317 10379;10380 10408	If every vertex of $G$ is a $p$-articulation vertex, then $G$ is called {\it minimally $p$-connected
+T1	Object 2155 2159	deck
+T49	Symbol 2180 2181	H
+T3	Object 2237 2251	reconstruction
+T50	Symbol 2426 2427	G
+T51	Symbol 3410 3421	\mathcal{R}
+T52	Symbol 3553 3564	\mathcal{R}
+T18	Symbol 4614 4615	M
+T54	Object 4634 4640	module
+T56	Symbol 5248 5249	G
+T57	Symbol 5832 5833	G
+T8	Object 5846 5865	P_4$-{\it connected
+T58	Object 5872 5879;5880 5889	p$-{\it connected
+T24	Object 6247 6254;6255 6273	p$-{\it connected componen
+T26	Symbol 6636 6641	(A,B)
+T59	Symbol 7071 7072	G
+T32	Object 7078 7092	P_4$-{\it tidy
+T61	Symbol 7683 7684	S
+T60	Symbol 8119 8126	(G,A,B)
+T39	Symbol 9216 9217	G
+T40	Symbol 10205 10206	v
+T43	Symbol 10367 10368	G
+T44	Symbol 2071 2075	D(G)
+T53	Symbol 4246 4247	T
+T55	Symbol 5152 5153	M

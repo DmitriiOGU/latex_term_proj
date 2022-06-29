@@ -1,0 +1,110 @@
+T1	Object 6699 6715	Patience Sorting
+T2	Description 6699 6761;6770 6828;6837 6866	Patience Sorting (a.k.a.~\emph{Floyd's Game}) can be viewed as an idealized model for the immensely popular single-person card game Klondike Solitaire.
+T3	Object 6730 6742	Floyd's Game
+T6	Description 7638 7666;7675 7736;7745 7805;7814 7863	This \emph{Extended Patience Sorting Algorithm} is similar to the Robinson-Schensted-Knuth (or RSK) Correspondence, which is itself built from repeated application of the Schensted Insertion Algorithm.
+T7	Object 7649 7666;7675 7692	Extended Patience Sorting Algorithm
+T8	Object 11676 11685;11702 11707	symmetric group
+T9	Description 11565 11616;11633 11685;11702 11750	Given a positive integer $n \in \mathbb{Z}_{+}$, we use $\mathfrak{S}_{n}$ to denote the \emph{symmetric group} on the set $[n] = \{ 1, 2, \ldots, n \}$.
+T10	Description 11752 11754;11771 11820;11837 11866	In other words, $\mathfrak{S}_{n}$ is the set of all bijective functions on $[n]$.
+T12	Description 12991 13034;13051 13085;13102 13149;13166 13220;13237 13264;13281 13331;13348 13395;13412 13419	In keeping with this emphasis on the values $\sigma_{i}$, a \emph{subsequence} (a.k.a.~\emph{subpermutation}) of a permutation $\sigma = \sigma_{1}\sigma_{2}\cdots\sigma_{n}$ is any sequence of the form $\pi = \sigma_{i_{1}}\sigma_{i_{2}}\cdots\sigma_{i_{k}}$, where $k \in [n]$ and $i_{1} < i_{2} < \cdots < i_{k}$.
+T17	Description 15076 15128;15145 15198;15215 15221	An \emph{increasing subsequence} of a permutation is any subsequence that increases when read from left to right.
+T18	Description 15464 15468;15485 15531;15548 15599;15616 15648	This illustrates the nonuniqueness of \emph{longest increasing subsequences}, and such subsequences can even be disjoint as in $456123$.
+T19	Object 15524 15531;15548 15571	longest increasing subsequences
+T21	Description 15650 15670;15687 15740;15757 15810;15827 15881;15898 15917	The \emph{length} of every longest increasing subsequence is nonetheless a well-defined property for a given permutation $\sigma \in \mathfrak{S}_{n}$, and we denote this statistic by $\ell_{n}(\sigma)$.
+T23	Object 24161 24181;24198 24210	left-to-right minima subsequences
+T24	Description 29827 29834;29851 29903;29920 29967;29984 30004	We also explicitly indicate each ``bumped'' value, using the null symbol ``$\emptyset$'' to denote the empty partial permutation.
+T25	Object 29962 29967;29984 30003	empty partial permutation
+T26	Description 39378 39408;39425 39476;39493 39546;39563 39598	This extends the notation used in Example~\ref{eg:SingleRowBumpingExample} so that $P$ becomes a so-called \emph{standard Young tableau} written in \emph{English notation}.
+T27	Object 39523 39545	standard Young tableau
+T29	Description 48027 48059;48076 48126;48143 48192;48209 48227	To get a sense of this, we first define the \emph{shape} $\lambda$ of $P$ to be the sequence of lengths $\lambda = (|w_{1}|, |w_{2}|, \cdots, |w_{r}|)$.
+T30	Description 48229 48247;48264 48315;48332 48376;48393 48395;48416 48461;48482 48504;48525 48565;48582 48584;48601 48647;48664 48688	One can prove (see \cite{refFulton1997}) that the partial permutations constituting $P$ much satisfy the conditions \[ |w_{1}| \geq |w_{2}| \geq \cdots \geq |w_{r}| \mbox{\quad and \quad} |w_{1}| + |w_{2}| + \cdots + |w_{r}| = n \] so that $\lambda$ is an example of a so-called \emph{partition} of $n$.
+T32	Description 52262 52298;52315 52369;52386 52440;52457 52491	This motivates the definition of the \emph{column word} $\mbox{col}(P)$ of a standard Young tableau $P$, which is formed by reading up each of the columns of $P$ from left to right.
+T34	Description 55413 55446;55467 55513;55534 55583;55604 55654;55675 55709;55730 55771	Two permutation $\sigma, \tau \in \mathfrak{S}_{n}$ are \emph{Knuth equivalent}, written $\sigma \stackrel{K}{\sim} \tau$, if they yield the same standard Young tableau $P(\sigma) = P(\tau)$ under Schensted Insertion (Algorithm~\ref{alg:SchenstedInsertion}).
+T35	Object 55495 55511	Knuth equivalent
+T36	Description 62636 62681;62698 62744;62761 62815;62832 62886	In particular, each entry in $P$ has a unique ``bumping path'' by which it reached its final position, and so this path can be inverted in order to ``unbump'' (a.k.a.~\emph{reverse row bump}) the entry.
+T37	Object 62857 62873	reverse row bump
+T38	Description 62903 62952;62969 63022;63039 63090;63107 63160;63177 63182	This motivates a bijective extension of Schensted Insertion called the \emph{RSK Correspondence}, which originated from the study of representations of the symmetric group by Robinson \cite{refRobinson1938} in 1938.
+T39	Object 62996 63014	RSK Correspondence
+T42	Description 64999 65038;65055 65108;65125 65177;65194 65217	We call $P(\sigma)$ the \emph{insertion tableau} and $Q(\sigma)$ the \emph{recording tableau} corresponding to $\sigma \in \mathfrak{S}_{n}$ under the RSK Correspondence.
+T43	Object 65029 65038;65055 65062	insertion tableau
+T44	Object 65090 65107	recording tableau
+T49	Description 72993 73046;73063 73082	An \emph{involution} is any permutation that is equal to its own inverse.
+T50	Object 73002 73012	involution
+T53	Description 75129 75151;75168 75220;75237 75290;75307 75361;75378 75398	The first part of this algorithm, which Mallows referred to as a ``patience sorting procedure'', involves partitioning a shuffled deck of cards into a collection of sorted subsequences called \emph{piles}.
+T54	Object 75391 75396	piles
+T56	Description 93859 93904;93925 93971;93992 94041;94062 94088;94109 94111;94136 94150;94175 94176;94201 94237	Given a pile configuration $R=\{r_{1}, r_{2}, \ldots, r_{m}\}$ that has been formed from $n$ cards, we call the $m$-tuple $\mathrm{sh}(R)$ the \emph{shape} of $R$, where \[ \mathrm{sh}(R) = (|r_{1}|, |r_{2}|, \ldots, |r_{m}|).
+T57	Description 94337 94380;94397 94399;94420 94461;94482 94498;94519 94559;94576 94578;94595 94632;94649 94675	Note, in particular, that $sh(R)$ satisfies \[ |r_{1}|, |r_{2}|, \ldots, |r_{m}| \in [n] \mbox{ \ and \ } |r_{1}| + |r_{2}| + \cdots + |r_{m}| = n \] and thus is an example of a so-called \emph{composition} of $n$.
+T59	Description 111735 111762;111783 111831;111852 111901;111922 111966;111987 111998;112019 112069;112090 112124	Then we say that $\pi$ is a \emph{(classical permutation) pattern contained} in $\sigma = \sigma_{1}\sigma_{2}\cdots\sigma_{n} \in \mathfrak{S}_{n}$ if $\sigma$ contains a subsequence $\sigma_{i_{1}}\sigma_{i_{2}}\ldots\sigma_{i_{m}}$ that is order-isomorphic to $\pi$.
+T63	Description 113405 113444;113469 113515;113540 113575;113600 113638;113663 113705;113730 113776;113801 113837;113862 113895;113920 113946	Given $k \in \mathbb{Z}_{+}$, a pattern of the form $\textrm{\emph{\i}}_k = 1 2 \cdots k \in \mathfrak{S}_{k}$ is called a (classical) \emph{monotone increasing} pattern, and $\sigma \in \mathfrak{S}_{n}$ contains $\textrm{\emph{\i}}_k$ if and only if the length of the longest increasing subsequence in $\sigma$ satisfies $\ell_{n}(\sigma) \geq k$.
+T65	Description 116122 116161;116182 116227;116248 116288;116309 116349;116370 116404;116425 116460;116481 116506	Then we say that $\pi$ is a \emph{block (permutation) pattern contained} in $\sigma = \sigma_{1}\sigma_{2}\cdots\sigma_{n} \in \mathfrak{S}_{n}$ if $\sigma$ contains a subsequence $\sigma_{i}\sigma_{i + 1}\ldots\sigma_{i + m - 1}$ that is order-isomorphic to $\pi$
+T67	Description 118055 118066;118087 118134;118155 118186;118207 118247;118268 118308;118329 118340;118361 118411;118432 118475;118496 118498;118523 118544;118569 118584;118609 118635	Then we say that $\pi$ is a \emph{generalized (permutation) pattern contained} in $\sigma = \sigma_{1}\sigma_{2}\cdots\sigma_{n} \in \mathfrak{S}_{n}$ if $\sigma$ contains a subsequence $\sigma_{i_{1}}\sigma_{i_{2}}\ldots\sigma_{i_{m}}$ that is order-isomorphic to $\pi$ such that \[ i_{j + 1} - i_{j} = 1 \mbox{ \ if \ } j \in [m - 1] \setminus D.
+T69	Description 128542 128562;128583 128585;128610 128653;128678 128679;128704 128769;128790 128792;128813 128859;128880 128930;128951 128964	Furthermore, the set \[ Av(\pi^{(1)}, \pi^{(2)}, \ldots, \pi^{(k)}) = \bigcup_{n \geq 1} S_{n}(\pi^{(1)}, \pi^{(2)}, \ldots, \pi^{(k)}) \] is called the \emph{(pattern) avoidance class} with \emph{basis} $\{\pi^{(1)}, \pi^{(2)}, \ldots, \pi^{(k)}\}$.
+T70	Object 128833 128858	(pattern) avoidance class
+T71	Description 128966 129000;129021 129037;129058 129060;129085 129134;129159 129208;129233 129240;129265 129314;129339 129345;129366 129368;129389 129435;129456 129502	We will also refer to the sequence of cardinalities \[ |S_{1}(\pi^{(1)}, \pi^{(2)}, \ldots, \pi^{(k)})|, |S_{2}(\pi^{(1)}, \pi^{(2)}, \ldots, \pi^{(k)})|, \ldots, |S_{n}(\pi^{(1)}, \pi^{(2)}, \ldots, \pi^{(k)})|, \ldots \] as the \emph{avoidance sequence} for the basis $\{\pi^{(1)}, \pi^{(2)}, \ldots, \pi^{(k)}\}$.
+T72	Object 129402 129420	avoidance sequence
+T73	Description 132801 132814;132827 132883;132896 132954;132967 133025;133038 133089;133102 133151	Specifically, two permutations $\sigma, \tau \in \mathfrak{S}_{n}$ are called \emph{patience sorting equivalent} (denoted $\sigma \stackrel{PS}{\sim} \tau$) if they result in the same pile configurations $R(\sigma) = R(\tau)$ under Patience Sorting (Algorithm~\ref{alg:MallowsPSprocedure}).
+T74	Object 132909 132936	patience sorting equivalent
+T82	Description 222568 222620;222637 222687;222704 222754;222771 222817;222834 222865;222882 222923	Two permutations $\sigma, \tau \in \mathfrak{S}_{n}$ are said to be \emph{patience sorting equivalent}, written $\sigma \stackrel{PS}{\sim} \tau$, if they yield the same pile configuration $R(\sigma) = R(\tau)$ under Patience Sorting (Algorithm~\ref{alg:MallowsPSprocedure}).
+T83	Object 222658 222685	patience sorting equivalent
+T84	Description 244658 244712;244729 244764;244781 244827;244844 244898;244915 244917;244938 244973;244994 245073;245094 245106;245127 245200	Given a composition $\gamma = (\gamma_{1}, \gamma_{2}, \ldots, \gamma_{m}) \models n$, the \emph{(classical) layered permutation pattern} $\pi_{\gamma} \in \mathfrak{S}_{n}$ is the permutation \[ \gamma_{1}(\gamma_{1} - 1) \cdots 1 (\gamma_{1} + \gamma_{2}) (\gamma_{1} + \gamma_{2} - 1) \cdots (\gamma_{1} + 1) \; \cdots \; n (n - 1) \cdots (\gamma_{1} + \gamma_{2} + \cdots + \gamma_{m - 1} + 1).
+T85	Object 244787 244826	(classical) layered permutation pattern
+T86	Description 303535 303588;303605 303657;303674 303691;303708 303710;303731 303780;303801 303824	Given a lattice point $(m, n) \in \mathbb{Z}^{2}$, we define the \emph{southwest shadow} of $(m, n)$ to be the quarter space \[ S_{SW}(m, n) = \{ (x, y) \in \mathbb{R}^{2} \ | \ x \leq m, \ y \leq n\}.
+T88	Description 304206 304259;304276 304329;304346 304401;304418 304466;304483 304540	Given lattice points $(m_{1}, n_{1}), (m_{2}, n_{2}), \ldots, (m_{k}, n_{k}) \in \mathbb{Z}^{2}$, we define their \emph{southwest shadowline} to be the boundary of the union of the shadows $S_{SW}(m_{1}, n_{1})$, $S_{SW}(m_{2}, n_{2})$, $\ldots$, $S_{SW}(m_{k}, n_{k})$.
+T89	Object 304358 304378	southwest shadowline
+T90	Description 313418 313465;313482 313536;313553 313604	We call $D_{SW}^{(k)}(\sigma)$ the $k^{\rm th}$ \emph{iterate} of the \emph{exhaustive shadow diagram} $D_{SW}(\sigma)$ for $\sigma \in \mathfrak{S}_{n}$.
+T92	Description 324028 324043;324056 324106;324119 324177;324190 324245;324258 324316;324329 324385;324398 324447	Then, given two different pairs of such columns in $R(\sigma)$ and $S(\sigma)$, the shadowline corresponding to the rightmost (resp.~leftmost) pair --- under the convention that new columns are always added to the right of all other columns in Algorithm~\ref{alg:ExtendedPSalgorithm} --- is called the \emph{upper} (resp.~\emph{lower}) shadowline.
+T94	Description 324524 324563;324580 324629;324646 324699;324716 324769;324786 324797	Given shadowlines $L^{(m)}_{i}(\sigma), L^{(m)}_{j}(\sigma)\in D_{SW}^{(m)}(\sigma)$ with $i<j$, we call $L^{(m)}_{i}(\sigma)$ the \emph{lower} shadowline and $L^{(m)}_{j}(\sigma)$ the \emph{upper} shadowline.
+T95	Object 324693 324699;324716 324726	lower} shadowline
+T96	Object 324763 324769;324786 324796	upper} shadowline
+T14	Description 13507 13524;13541 13592;13609 13662;13679 13726;13743 13761	It is also common to call $\pi$ a \emph{partial permutation on} $[n]$ since it is the restriction of the bijective function $\sigma$ to the subset $\{i_{1}, i_{2}, \ldots, i_{k}\}$ of $[n]$.
+T28	Object 48093 48098	shape
+T33	Object 52321 52332	column word
+T123	Symbol 304227 304259;304276 304318	$(m_{1}, n_{1}), (m_{2}, n_{2}), \ldots, (m_{k}, n_{k}) \in \mathbb{Z}^{2}$
+T126	Symbol 324731 324752	$L^{(m)}_{j}(\sigma)$
+T125	Symbol 324661 324682	$L^{(m)}_{i}(\sigma)$
+T4	Symbol 11638 11654	\mathfrak{S}_{n}
+T5	Symbol 11785 11801	\mathfrak{S}_{n}
+T97	Symbol 13052 13062	\sigma_{i}
+T98	Symbol 13550 13553	\pi
+T15	Object 13563 13582	partial permutation
+T16	Object 15085 15107	increasing subsequence
+T20	Object 15660 15666	length
+T99	Symbol 15899 15915	\ell_{n}(\sigma)
+T22	Description 23951 23954;23971 23983;24000 24053;24070 24121;24138 24181;24198 24224	(In other words, $\sigma_{i_{1}}\sigma_{i_{2}}\cdots\sigma_{i_{k}}$ is a decreasing subsequence of $\sigma$, which we call the $v^{\rm th}$ \emph{left-to-right minima subsequences} of $\sigma$.
+T100	Symbol 24143 24153	v^{\rm th}
+T101	Symbol 29935 29944	\emptyset
+T102	Symbol 39494 39495	P
+T103	Symbol 48101 48108	\lambda
+T104	Symbol 48610 48617	\lambda
+T31	Object 48670 48679	partition
+T105	Symbol 52335 52348	\mbox{col}(P)
+T106	Symbol 55543 55573	\sigma \stackrel{K}{\sim} \tau
+T107	Object 62834 62840	unbump
+T40	Symbol 65008 65017	P(\sigma)
+T41	Symbol 65069 65078	Q(\sigma)
+T51	Symbol 94022 94036	\mathrm{sh}(R)
+T52	Object 94068 94073	shape
+T58	Object 94655 94666	composition
+T60	Object 111789 111820	(classical permutation) pattern
+T108	Symbol 111753 111756	\pi
+T61	Object 113618 113637	monotone increasing
+T62	Symbol 116140 116143	\pi
+T64	Object 116156 116161;116182 116203	block (permutation) pattern
+T66	Object 118109 118134;118155 118162	generalized (permutation) pattern
+T68	Symbol 118093 118096	\pi
+T111	Symbol 132948 132954;132967 132991	\sigma \stackrel{PS}{\sim} \tau
+T76	Symbol 129085 129134;129159 129208;129233 129240;129265 129314;129339 129345	|S_{1}(\pi^{(1)}, \pi^{(2)}, \ldots, \pi^{(k)})|, |S_{2}(\pi^{(1)}, \pi^{(2)}, \ldots, \pi^{(k)})|, \ldots, |S_{n}(\pi^{(1)}, \pi^{(2)}, \ldots, \pi^{(k)})|, \ldots
+T55	Symbol 94420 94461;94482 94498;94519 94559	|r_{1}|, |r_{2}|, \ldots, |r_{m}| \in [n] \mbox{ \ and \ } |r_{1}| + |r_{2}| + \cdots + |r_{m}| = n
+T78	Symbol 222713 222744	\sigma \stackrel{PS}{\sim} \tau
+T110	Symbol 303558 303583	(m, n) \in \mathbb{Z}^{2}
+T87	Object 303622 303638	southwest shadow
+T91	Symbol 313454 313464	k^{\rm th}
+T112	Object 313488 313495	iterate
+T93	Object 324408 324413	upper
+T113	Object 324428 324433	lower
+T11	Object 11810 11820;11837 11856	set of all bijective functions
+T114	Object 13116 13130	subpermutation
+T13	Object 13073 13084	subsequence
+T46	Symbol 113482 113502	\textrm{\emph{\i}}_k
+T47	Symbol 128610 128653	Av(\pi^{(1)}, \pi^{(2)}, \ldots, \pi^{(k)})
+T45	Symbol 244679 244685	\gamma

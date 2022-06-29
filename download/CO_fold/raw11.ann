@@ -1,0 +1,6 @@
+T1	Description 604 688	Let $B$ be properly $n$- colored bipartite multigraph with $n+1$ edges of each color
+T5	Description 769 889	Let $B=\{ V_1 =(v_{1,1},\ldots ,v_{1,p}),V_2 =(v_{2,1},\ldots ,v_{2,q}),E\}$ be bipartite graph as stated in Conjecture.
+T6	Object 849 864	bipartite graph
+T2	Object 624 657	$n$- colored bipartite multigraph
+T4	Symbol 609 610	B
+T3	Symbol 774 775	B
